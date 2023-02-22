@@ -27,19 +27,22 @@ header{
     flex-direction: row-reverse;
     position: relative;
     margin-right: 10px;
-    right: 0px;
-    left: 90%;
+    margin-left: 5px;
+    float: left;
 }
-/*no se centra fuck it */
+.hea-top .telf{
+    border: 1px solid #dddddd00;
+    padding: 5px;
+    width: 45px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
 .hea-bottom{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    clear: both;
 }
-
-section{
-clear: both;}
-
 
 /*nav */
 nav{
@@ -80,7 +83,6 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(196, 110, 110)
 }
-  
 li.dropdown {
     display: inline-block;
 }
@@ -102,9 +104,7 @@ li.dropdown {
     display: block;
     text-align: left;
 }
-  
 .dropdown-content a:hover {background-color: #f1f1f1;}
-  
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -112,10 +112,22 @@ li.dropdown {
     background-color: #04AA6D;
 }
 /*over flow clip para que las palabras quepan seguro*/
-
 .responsive{
     text-align: center;
 	padding: 1rem 1rem;
+}
+.art-video{
+    display: flex;
+}
+.sec-video{
+    float: left;
+}
+.text-v{
+    padding: 2%;
+}
+.text-v p{
+    margin-top: 1rem;
+    font-size: larger;
 }
 .box{
     height: 100px;
@@ -125,10 +137,12 @@ li.dropdown {
 	text-align: left;
 	color: white;
 	background-color: green;
-    background-image: url(Integracion.png);
+    background-position: center;
+    background-image: url(audiología.png); 
+    background-size: 100%; 
 	padding: 1rem;
-    overflow: clip;
 }
+
 .box:hover{
     cursor: pointer;
 }
@@ -139,9 +153,19 @@ li.dropdown {
     float: left;
     width: 33.3333%;
 }
+.gplay{
+    margin-top: 10%;
+    width: 100px;
+}
+.dapp{
+    margin-top: 10%;
+    width: 100px;
+}
 
-
-@media only screen and (max-width: 620px) {
+.clear{
+    clear: both;
+}
+@media only screen and (max-width: 950px) {
     /* For mobile phones: */
     .col-4{
       width: 100%;
